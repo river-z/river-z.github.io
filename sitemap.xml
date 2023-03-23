@@ -2,13 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://river-z.github.io/blog/</loc>
-    <priority>0</priority>
+    <loc>https://river-z.github.io/posts/blog/mac%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/</loc>
+    <lastmod>2023-03-22T15:22:37+08:00</lastmod>
+  </url><url>
+    <loc>https://river-z.github.io/posts/</loc>
+    <lastmod>2023-03-22T15:22:37+08:00</lastmod>
+  </url><url>
+    <loc>https://river-z.github.io/posts/blog/react/</loc>
+    <lastmod>2023-03-22T15:22:37+08:00</lastmod>
+  </url><url>
+    <loc>https://river-z.github.io/</loc>
+    <lastmod>2023-03-22T15:22:37+08:00</lastmod>
+  </url><url>
+    <loc>https://river-z.github.io/posts/blog/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E6%8A%A5%E9%94%99%E6%95%B4%E7%90%86/</loc>
+    <lastmod>2023-03-22T15:20:13+08:00</lastmod>
+  </url><url>
+    <loc>https://river-z.github.io/posts/blog/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</loc>
+    <lastmod>2023-03-22T15:20:13+08:00</lastmod>
   </url><url>
     <loc>https://river-z.github.io/categories/</loc>
   </url><url>
     <loc>https://river-z.github.io/tags/</loc>
-  </url><url>
-    <loc>https://river-z.github.io/</loc>
   </url>
 </urlset>

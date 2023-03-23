@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Welcome to river&#39;s hugo site</title>
-    <link>https://river-z.github.io/</link>
-    <description>Recent content on Welcome to river&#39;s hugo site</description>
+    <title>Posts on Welcome to river&#39;s hugo site</title>
+    <link>https://river-z.github.io/posts/</link>
+    <description>Recent content in Posts on Welcome to river&#39;s hugo site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh</language>
-    <lastBuildDate>Wed, 22 Mar 2023 15:22:37 +0800</lastBuildDate><atom:link href="https://river-z.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Mar 2023 15:22:37 +0800</lastBuildDate><atom:link href="https://river-z.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Mac常用命令行操作</title>
       <link>https://river-z.github.io/posts/blog/mac%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E8%A1%8C%E6%93%8D%E4%BD%9C/</link>

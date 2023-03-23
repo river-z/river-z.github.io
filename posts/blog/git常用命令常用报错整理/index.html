@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <title>Git常用命令 // Welcome to river&#39;s hugo site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git常用命令"/>
+<meta name="twitter:description" content="常见报错 git init 之后，直接执行commit报错： nothing added to commit but untracked files present (use &ldquo;git add&rdquo; to track) 执行add 继续报错 error: &lsquo;packages/client_taro/&rsquo; does not have a commit checked out fatal: adding files failed
+packages/client_taro/文件夹下有一个初始化的git仓库，常见于本文件是从其他仓库复制过来导致
+mac操作查找隐藏文件命令：command &#43; shift &#43; .
+常用git 命令 新建仓库关联本地 git 远端创建仓库 demo 本地创建文件夹demo/其他不同的名字都可，建议取名一致。 cd demo -&gt; git init (本地git仓库初始化，以下步骤可以参照git远端仓库提示) git add README.md (可以是需要提交到暂存区的所有改动文件) git commit -m &ldquo;feat: first commit&rdquo; (格式：m后空格，提交type后空格: 空格) git remote add origin https://github.com/Rosemary-z/eden_taro_demo.git （本地关联远端，添加远端仓库源） git push -u origin master (提交本地修改到远端仓库) 本地新建开发分支，关联远端分支 远端仓库新建分支 feat/dev 本地新建分支并关联远端分支 git checkout -b feat/dev origin/feat/dev TE # 更新远程主机origin 整理分支 git push 建立关联之后，可以直接执行该命令上传远端 git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;"/>
+
+    <meta property="og:title" content="Git常用命令" />
+<meta property="og:description" content="常见报错 git init 之后，直接执行commit报错： nothing added to commit but untracked files present (use &ldquo;git add&rdquo; to track) 执行add 继续报错 error: &lsquo;packages/client_taro/&rsquo; does not have a commit checked out fatal: adding files failed
+packages/client_taro/文件夹下有一个初始化的git仓库，常见于本文件是从其他仓库复制过来导致
+mac操作查找隐藏文件命令：command &#43; shift &#43; .
+常用git 命令 新建仓库关联本地 git 远端创建仓库 demo 本地创建文件夹demo/其他不同的名字都可，建议取名一致。 cd demo -&gt; git init (本地git仓库初始化，以下步骤可以参照git远端仓库提示) git add README.md (可以是需要提交到暂存区的所有改动文件) git commit -m &ldquo;feat: first commit&rdquo; (格式：m后空格，提交type后空格: 空格) git remote add origin https://github.com/Rosemary-z/eden_taro_demo.git （本地关联远端，添加远端仓库源） git push -u origin master (提交本地修改到远端仓库) 本地新建开发分支，关联远端分支 远端仓库新建分支 feat/dev 本地新建分支并关联远端分支 git checkout -b feat/dev origin/feat/dev TE # 更新远程主机origin 整理分支 git push 建立关联之后，可以直接执行该命令上传远端 git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://river-z.github.io/posts/blog/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%B8%B8%E7%94%A8%E6%8A%A5%E9%94%99%E6%95%B4%E7%90%86/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-22T15:20:13+08:00" />
+<meta property="article:modified_time" content="2023-03-22T15:20:13+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://river-z.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Welcome to river&#39;s hugo site</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Git常用命令</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 22, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          3 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="常见报错">常见报错</h2>
+<h3 id="git-init-之后直接执行commit报错">git init 之后，直接执行commit报错：</h3>
+<blockquote>
+<p>nothing added to commit but <strong>untracked files</strong> present (use &ldquo;git add&rdquo; to track) 执行add 继续报错
+error: &lsquo;packages/client_taro/&rsquo; does not have a commit checked out
+fatal: adding files failed</p>
+</blockquote>
+<ul>
+<li>
+<p>packages/client_taro/文件夹下有一个初始化的git仓库，常见于本文件是从其他仓库复制过来导致</p>
+</li>
+<li>
+<p>mac操作查找隐藏文件命令：<code>command + shift + .</code></p>
+</li>
+</ul>
+<h2 id="常用git-命令">常用git 命令</h2>
+<h3 id="新建仓库关联本地">新建仓库关联本地</h3>
+<ol>
+<li>git 远端创建仓库 demo</li>
+<li>本地创建文件夹demo/其他不同的名字都可，建议取名一致。</li>
+<li>cd demo -&gt; git init (本地git仓库初始化，以下步骤可以参照git远端仓库提示)</li>
+<li>git add README.md (可以是需要提交到暂存区的所有改动文件)</li>
+<li>git commit -m &ldquo;feat: first commit&rdquo; (格式：m后空格，提交type后空格: 空格)</li>
+<li>git remote add origin <a href="https://github.com/Rosemary-z/eden_taro_demo.git">https://github.com/Rosemary-z/eden_taro_demo.git</a> （本地关联远端，添加远端仓库源）</li>
+<li>git push -u origin master (提交本地修改到远端仓库)</li>
+</ol>
+<h3 id="本地新建开发分支关联远端分支">本地新建开发分支，关联远端分支</h3>
+<ol>
+<li>远端仓库新建分支 feat/dev</li>
+<li>本地新建分支并关联远端分支 git checkout -b feat/dev origin/feat/dev</li>
+<li>TE # 更新远程主机origin 整理分支</li>
+<li>git push 建立关联之后，可以直接执行该命令上传远端</li>
+</ol>
+<p>git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</p>
+<h3 id="查看分支">查看分支</h3>
+<ol>
+<li>git branch -a # 查看当前所有分支，包括远端和本地</li>
+<li>git branch -r # 查看当前所有远端分支</li>
+<li>git branch -vv # 查看本地分支和远端分支对应关系</li>
+<li>git branch # 查看本地分支</li>
+</ol>
+<h3 id="分支切换">分支切换</h3>
+<ol>
+<li>git checkout 分支名 # 切换到本地分支</li>
+<li>git checkout branch 分支名 # 切换到本地分支</li>
+</ol>
+<h3 id="删除本地分支">删除本地分支</h3>
+<ol>
+<li>git branch -d 分支名 # 删除本地分支</li>
+</ol>
+<h3 id="删除远端分支">删除远端分支</h3>
+<ol>
+<li>git branch -r -d 远程分支名 # 如（origin/feat/star_zxe）</li>
+<li>git push origin :feat/star_zxe # 这一步一定要做，可以理解为向远端同步推送一个删除的分支</li>
+</ol>
+<p>git fetch &ndash;prune origin # 更新本地分支缓存</p>
+<h3 id="建立本地分支和远端分支的追踪关系">建立本地分支和远端分支的追踪关系</h3>
+<p>git branch &ndash;set-upstream-to origin/分支名</p>
+<h3 id="commit">commit</h3>
+<ol>
+<li>git commit -m &rsquo;type: '</li>
+<li>git commit -am &rsquo;type &rsquo; # add 和 commit 的合并，便捷写法，注意：这里的提交只针对tracked已建立追踪关系的文件，如果有新文件，想要commit，还是必须先执行add命令。</li>
+<li>git commit &ndash;amend # 查看最近一次commit的详情</li>
+<li>git commit &ndash;amend -m &lsquo;本次提交说明&rsquo; # 修改commit信息</li>
+</ol>
+<blockquote>
+<p>git commit &ndash;amend 既可以修改上次提交的文件内容，也可以修改上次提交的说明。会用一个新的 commit 更新并替换最近一次提交的 commit 。如果暂存区有内容，这个新的 commit 会把任何修改内容和上一个 commit 的内容结合起来。如果暂存区没有内容，那么这个操作就只会把上次的 commit 消息重写一遍。「永远不要修复一个已经推送到公共仓库中的提交，会拒绝推送到仓库」</p>
+</blockquote>
+<ol start="5">
+<li>将多个commit合并为一个qq</li>
+</ol>
+<ul>
+<li>git rebase -i HEAD~5 压缩5个commit为1个，或者git rebase -i 51efaef517abdbf674478de6073c12239d78a56a （第一个commit的id）</li>
+<li>vim编辑器，按i编辑，将后4个commit的pick修改为fixup，保留第一个pick。按esc键，输入:wq保存退出</li>
+</ul>
+<ol start="6">
+<li>git show commitId 查找某一次commit的修改</li>
+</ol>
+<p><a href="https://segmentfault.com/a/1190000023734704">详细git命令参考</a></p>
+<h3 id="修改最新一次提交的时间和信息">修改最新一次提交的时间和信息</h3>
+<p>git commit &ndash;amend &ndash;message=&ldquo;fea: &hellip;&rdquo;
+git commit &ndash;amend &ndash;date=Thu, 03 Nov 2022 13:25:58 +0800&quot;  (date -R 命令可以输出当前的时间)
+git commit &ndash;amend &ndash;author=&quot;&quot;
+修改后可能需要git rebase continue 回到当前分支</p>
+<h3 id="merge">merge</h3>
+<ol>
+<li>先确保分支代码已经被commit push，然后进行分支切换 git checkout 分支名（被merge to 的那个分支）</li>
+<li>git merge 分支名（想要合并的那个分支的名称）</li>
+</ol>
+<h3 id="删除分支">删除分支</h3>
+<ol>
+<li>git checkout master</li>
+<li>git branch -d feat/zxe</li>
+<li>git branch -D feat/zxe &mdash; 强制删除</li>
+</ol>
+<h3 id="git-stash">git stash</h3>
+<blockquote>
+<p>应用场景：本来在开发的分支上，有代码还不想commit-push，线上有紧急bug需要处理，这时可以将本地的修改stash起来，然后新建一个fix分支处理bug，处理完之后，合并到master，并且删除这个fix分支</p>
+</blockquote>
+<ol>
+<li>git stash 不会存储没有git追踪的文件，所以要执行git add 将文件添加为可追踪</li>
+<li>git stash save + 注释</li>
+<li>git stash list  &mdash;- 查看所有本地存储的代码列表</li>
+<li>git stash pop &mdash;- 将当前的stash应用到当前分支，并清空stash</li>
+<li>git stash apply &mdash;- 和上述命令的区别是，不会删除，而是可以重复利用到各个分支</li>
+<li>git stash show stash@{2}</li>
+<li>git stash clear 清空目前所有的stash list</li>
+<li>git stash drop -q stash@{7}  清楚某个stash</li>
+</ol>
+<h3 id="将已经add的文件撤回取消追踪">将已经add的文件撤回(取消追踪)</h3>
+<p>git rm &ndash;cached <!-- raw HTML omitted --></p>
+<h3 id="查看分支建立时间">查看分支建立时间</h3>
+<p>git reflog show &ndash;date=iso master</p>
+<h3 id="强制覆盖远端代码到本地">强制覆盖远端代码到本地</h3>
+<p>git fetch &ndash;all
+git reset &ndash;hard origin/master
+git pull</p>
+<h3 id="git-撤销某个文件的修改">git 撤销某个文件的修改</h3>
+<ol>
+<li>工作区修改，并未commit</li>
+</ol>
+<blockquote>
+<p>注意：git chekcout 是让文件回到最近一次该文件git commit或git add时的状态。
+git checkout 文件名/路径  &mdash;- 单个文件
+git checkout . &mdash;- 撤销工作区中所有文件修改</p>
+</blockquote>
+<ol start="2">
+<li>修改后提了git add
+未commit
+git rm &ndash;cached 文件名
+有commit记录
+git reset HEAD file
+git chekcout &ndash; file
+<a href="https://www.codenong.com/cs106480273/">撤销某个文件的修改</a>
+<a href="https://blog.csdn.net/u011008029/article/details/52351141">git 让单个文件回退到指定版本</a> &ndash;这个版本比较靠谱，不会影响到别人的提交</li>
+</ol>
+<p>方式1: git  checkout &ndash;ours   ./project/m-teach    该文件夹下的冲突 都采用我刚传入的</p>
+<p>git  checkout &ndash;theirs   ./project/m-teach   该文件夹下的冲突都采用 别人的</p>
+<p>方式2
+git checkout origin/master &ndash; ./project/m-teach      该文件夹下的冲突都采用远程的 master的</p>
+<p>git reset &ndash;hard +commit 编号 将本地指向某一次修改
+git push &ndash;force 强制push当前的修改到远程关联分支</p>
+<p>git branch -vv 查看本地分支和远程分支关联</p>
+<p>撤销与建立本地分支与远程分支的映射关系
+git branch &ndash;unset-upstream
+git branch &ndash;set-upstream-to=origin 分支名 remotes/origin/feat/zengxuee</p>
+<h3 id="查看本地git操作日志">查看本地git操作日志</h3>
+<p>git reflog
+配合git reset &ndash;hard +日志版本号，可以回退操作</p>
+<p>:q! 不保存修改退出
+:wq 保存退出</p>
+<h3 id="git-restore">git restore</h3>
+<p>git restore &ndash;staged 将文件从暂存区撤出，但不会撤销文件的更改
+git resore 将不在暂存区的文件撤销更改
+git restore &ndash;staged .
+git restore .</p>
+<h3 id="git-checkout">git checkout</h3>
+<p>撤销某个文件的修改
+git checkout &ndash; file name (&ndash; 后的空格不可缺)</p>
+<h3 id="本地分支代码落后又超前-别人更新到master上之前本地我没有pull再commit">本地分支代码落后又超前-别人更新到master上之前，本地我没有pull再commit</h3>
+<p>这里可以通过cherry-pick -n来把这几个commit变更到本地，然后再执行commit操作
+<a href="https://www.ruanyifeng.com/blog/2020/04/git-cherry-pick.html">cherry-pick相应用法参考</a>
+未提交的commit，可以通过git stash 来本地暂存，然后先pull远程分支代码再apply stash操作</p>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>

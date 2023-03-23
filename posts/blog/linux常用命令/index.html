@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <title>Linux常用命令 // Welcome to river&#39;s hugo site</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta charset="utf-8" />
+    <meta name="generator" content="Hugo 0.105.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="John Doe" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/main.min.3c3c186cd62e563ad6e2f00a89dbee656ab912d1d46f856b5605dd0232521e2a.css" />
+
+    
+    <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux常用命令"/>
+<meta name="twitter:description" content="Linux 基础 Linux基础
+常用Linux命令 ps -ef | grep eden-proxy 查看eden-proxy启动的进程 kill -9 pid 杀进程 commond &#43; shift &#43; . 打开隐藏文件夹 mkdir filename 创建文件 code 文件路径/文件名 用vscode打开文件 Linux 体系结构 用户空间 应用程序应用于用户空间 内核空间 硬件与软件之间的中间层 资源管理程序 提供一组面向系统的命令 linux 内核 命令解释器 文件系统 linux 应用程序 进程管理 进程是正在执行的一个程序或命令 有自己的地址空间，占用一定的系统资源 一个cpu核同一时间只能运行一个进程 进程由它的进程ID(PID)和它父进程的进程ID(PPID)唯一识别 进程调度 操作系统按照某种策略或规则选择进程占用CPU进行运行的过程 进程状态 R (TASK_RUNNING)，可执行状态 S (TASK_INTERRUPTIBLE)， 可中断的睡眠状态 D (TASK_UNINTERRUPTIBLE)， 不可中断的睡眠状态 T (TASK_STOPPED or TASK_TRACED)， 暂停状态或跟踪状态 Z (TASK_DEAD-EXIT_ZOMBIE)， 退出状态，进程成为僵尸进程 (TASK_DEAD-EXIT_DEAD)，退出状态， 进程即将被销毁 文件系统 Linux文件系统是采用树状的结构目录 虚拟文件系统（VFS） 对应用层提供一个标准的文件操作接口 对文件系统提供一个标准的文件接入接口 查看文件系统类型 进程调度原则 一个CPU核同一时间只能运行一个进程 每个进程有近乎相等的执行时间 对于逻辑CPU而言进程调度使用轮询的方式执行，当轮询完成则回到第一个进程反复进程执行消耗时间和进程量成正比 "/>
+
+    <meta property="og:title" content="Linux常用命令" />
+<meta property="og:description" content="Linux 基础 Linux基础
+常用Linux命令 ps -ef | grep eden-proxy 查看eden-proxy启动的进程 kill -9 pid 杀进程 commond &#43; shift &#43; . 打开隐藏文件夹 mkdir filename 创建文件 code 文件路径/文件名 用vscode打开文件 Linux 体系结构 用户空间 应用程序应用于用户空间 内核空间 硬件与软件之间的中间层 资源管理程序 提供一组面向系统的命令 linux 内核 命令解释器 文件系统 linux 应用程序 进程管理 进程是正在执行的一个程序或命令 有自己的地址空间，占用一定的系统资源 一个cpu核同一时间只能运行一个进程 进程由它的进程ID(PID)和它父进程的进程ID(PPID)唯一识别 进程调度 操作系统按照某种策略或规则选择进程占用CPU进行运行的过程 进程状态 R (TASK_RUNNING)，可执行状态 S (TASK_INTERRUPTIBLE)， 可中断的睡眠状态 D (TASK_UNINTERRUPTIBLE)， 不可中断的睡眠状态 T (TASK_STOPPED or TASK_TRACED)， 暂停状态或跟踪状态 Z (TASK_DEAD-EXIT_ZOMBIE)， 退出状态，进程成为僵尸进程 (TASK_DEAD-EXIT_DEAD)，退出状态， 进程即将被销毁 文件系统 Linux文件系统是采用树状的结构目录 虚拟文件系统（VFS） 对应用层提供一个标准的文件操作接口 对文件系统提供一个标准的文件接入接口 查看文件系统类型 进程调度原则 一个CPU核同一时间只能运行一个进程 每个进程有近乎相等的执行时间 对于逻辑CPU而言进程调度使用轮询的方式执行，当轮询完成则回到第一个进程反复进程执行消耗时间和进程量成正比 " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://river-z.github.io/posts/blog/linux%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-22T15:20:13+08:00" />
+<meta property="article:modified_time" content="2023-03-22T15:20:13+08:00" />
+
+
+
+  </head>
+  <body>
+    <header class="app-header">
+      <a href="https://river-z.github.io/"><img class="app-header-avatar" src="/avatar.jpg" alt="John Doe" /></a>
+      <span class="app-header-title">Welcome to river&#39;s hugo site</span>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vehicula turpis sit amet elit pretium.</p>
+    </header>
+    <main class="app-container">
+      
+  <article class="post">
+    <header class="post-header">
+      <h1 class ="post-title">Linux常用命令</h1>
+      <div class="post-meta">
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-calendar">
+  <title>calendar</title>
+  <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line>
+</svg>
+          Mar 22, 2023
+        </div>
+        <div>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-clock">
+  <title>clock</title>
+  <circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+          1 min read
+        </div>
+      </div>
+    </header>
+    <div class="post-content">
+      <h2 id="linux-基础">Linux 基础</h2>
+<p><a href="https://linuxtools-rst.readthedocs.io/zh_CN/latest/base/02_file_manage.html">Linux基础</a></p>
+<h2 id="常用linux命令">常用Linux命令</h2>
+<ul>
+<li>ps -ef | grep eden-proxy 查看eden-proxy启动的进程</li>
+<li>kill -9 pid 杀进程</li>
+<li>commond + shift + . 打开隐藏文件夹</li>
+<li>mkdir filename 创建文件</li>
+<li>code 文件路径/文件名 用vscode打开文件</li>
+</ul>
+<h2 id="linux-体系结构">Linux 体系结构</h2>
+<h3 id="用户空间">用户空间</h3>
+<ul>
+<li>应用程序应用于用户空间</li>
+</ul>
+<h3 id="内核空间">内核空间</h3>
+<ul>
+<li>硬件与软件之间的中间层</li>
+<li>资源管理程序</li>
+<li>提供一组面向系统的命令</li>
+</ul>
+<h3 id="linux-内核">linux 内核</h3>
+<ul>
+<li>命令解释器</li>
+<li>文件系统</li>
+<li>linux 应用程序</li>
+</ul>
+<h3 id="进程管理">进程管理</h3>
+<ul>
+<li>进程是正在执行的一个程序或命令</li>
+<li>有自己的地址空间，占用一定的系统资源</li>
+<li>一个cpu核同一时间只能运行一个进程</li>
+<li>进程由它的进程ID(PID)和它父进程的进程ID(PPID)唯一识别</li>
+</ul>
+<h3 id="进程调度">进程调度</h3>
+<ul>
+<li>操作系统按照某种策略或规则选择进程占用CPU进行运行的过程</li>
+<li>进程状态
+R (TASK_RUNNING)，可执行状态
+S (TASK_INTERRUPTIBLE)， 可中断的睡眠状态
+D (TASK_UNINTERRUPTIBLE)， 不可中断的睡眠状态
+T (TASK_STOPPED or TASK_TRACED)， 暂停状态或跟踪状态  Z (TASK_DEAD-EXIT_ZOMBIE)， 退出状态，进程成为僵尸进程  (TASK_DEAD-EXIT_DEAD)，退出状态， 进程即将被销毁</li>
+</ul>
+<h3 id="文件系统">文件系统</h3>
+<ul>
+<li>Linux文件系统是采用树状的结构目录</li>
+</ul>
+<h3 id="虚拟文件系统vfs">虚拟文件系统（VFS）</h3>
+<ul>
+<li>对应用层提供一个标准的文件操作接口</li>
+<li>对文件系统提供一个标准的文件接入接口</li>
+</ul>
+<h3 id="查看文件系统类型">查看文件系统类型</h3>
+<h3 id="进程调度原则">进程调度原则</h3>
+<ul>
+<li>一个CPU核同一时间只能运行一个进程</li>
+<li>每个进程有近乎相等的执行时间</li>
+<li>对于逻辑CPU而言进程调度使用轮询的方式执行，当轮询完成则回到第一个进程反复进程执行消耗时间和进程量成正比</li>
+</ul>
+
+    </div>
+    <div class="post-footer">
+      
+    </div>
+  </article>
+
+    </main>
+  </body>
+</html>
